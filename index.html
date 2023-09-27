@@ -1,0 +1,58 @@
+<!-- Build your First Form, students can deside on the theme.
+
+Challenge 1: Use the text input to get the user name 
+Challenge 2: Use lable in appropriate places
+Challenge 3: use different form input elements
+Challenge 4: When the form is submitted, get the user's response and add the same to the body of the mail with your email id in the "to" section.
+-->
+
+<!-- your code goes below this comment -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form action="mailto:aaditya.kaushik@kalvium.community" method="post" enctype="text/plain">  
+  <div class="container">
+        <h2><U>Feedback Form</U></h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="name" name="name" required required placeholder="Enter your name here"> <br><br>
+
+            <label for="email">Email:</label>
+            &nbsp &nbsp&nbsp&nbsp<input type="text" id="email" name="email" required required placeholder="Enter your email here"><br><br>
+
+            <label for="Roll No">Roll No.</label>
+            &nbsp&nbsp<input type="text" id="rollno" name="rollno." required required placeholder="Enter your Roll No.here"><br><br><br>
+
+
+          <div>
+            Rate your feedback from the scale of 1 to 5 <br>
+            <input type="radio" id="radio" name="A" required> 1
+            <input type="radio" id="radio" name="A" required> 2
+            <input type="radio" id="radio" name="A" required> 3
+            <input type="radio" id="radio" name="A" required> 4
+            <input type="radio" id="radio" name="A" required> 5 
+            <br><br><br>
+          </div>
+           
+           
+           
+            <div class="feedbackarea">
+            <label id="feedback" for="message">Your Feedback:</label></div>
+            <div>
+            <textarea id="message" name="message" rows="4" required></textarea> <br><br><br>
+            </div>
+<hr>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
